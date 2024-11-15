@@ -1,5 +1,6 @@
-k&acake {
+/* logo*/
 
+k&acake {
 position:absolute;
 color:#ffffff;
 text-align:center;
@@ -10,4 +11,12 @@ line-height:auto;
 border-style:hidden;
 outline:none;
 width:66px;
+}
+
+.rectangle17
+{
+position:absolute;
+background-color:#b942f8;
+height:11px;
+width:236px;
 }
