@@ -1,35 +1,96 @@
-/* logo*/
-
-.k&acake {
-position:absolute;
-color:#ffffff;
-text-align:center;
-vertical-align:text-middle;
-font-size:8px;
-font-family:Lily Script One;
-line-height:auto;
-border-style:hidden;
-outline:none;
-width:66px;
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    color: #333;
 }
 
-.rectangle17 {
-position:absolute;
-background-color:#b942f8;
-height:11px;
-width:236px;
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c54bcb;
+    padding: 10px 20px;
+    color: white;
 }
 
-.k&acake1
-{
-position:absolute;
-color:#450087;
-text-align:center;
-vertical-align:text-top;
-font-size:20px;
-font-family:Lily Script One;
-line-height:auto;
-border-style:hidden;
-outline:none;
-width:125px;
+.logo {
+    font-size: 20%;
+    font-weight: bold;
+    bottom: 30%;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.search-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    margin-left: 5px;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+/* Banner principal */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Ajusta la altura del banner según sea necesario */
+    background-image: url('IMG/FONDO.png'); /* Imagen de fondo del banner */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+/* Contenedor de las imágenes superpuestas */
+.overlay {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* Imagen del pastel */
+.pastel_principal-image {
+    position: absolute;
+    left: 10%; /* Posiciona la imagen del pastel a la izquierda */
+    bottom: 55px; /* Ajusta este valor para mover la imagen hacia arriba o abajo */
+    width: 200px; /* Ajusta el tamaño de la imagen del pastel */
+    height: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+/* Imagen del logo */
+.logo2 {
+    position: absolute;
+    bottom: 40%; /* Ajusta este valor para centrar verticalmente el logo */
+    left: 70%;
+    transform: translateX(-50%);
+    width: 300px; /* Ajusta el tamaño del logo */
+    height: auto;
 }
