@@ -1,12 +1,13 @@
-/* Rectangle 1 */
+k&acake {
 
-.body{
-/* Rectangle 1 */
-
-position: absolute;
-width: 236px;
-height: 179px;
-
-background: #FFFFFF;
-
+position:absolute;
+color:#ffffff;
+text-align:center;
+vertical-align:text-middle;
+font-size:8px;
+font-family:Lily Script One;
+line-height:auto;
+border-style:hidden;
+outline:none;
+width:66px;
 }
