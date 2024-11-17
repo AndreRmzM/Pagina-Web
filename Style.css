@@ -48,6 +48,38 @@ body {
     gap: 15px;
 }
 
+/* Botón del usuario como imagen */
+.user-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0; /* Elimina espacios del botón */
+}
+
+.user-img {
+    width: 30px; /* Tamaño de la imagen */
+    height: 30px;
+    border-radius: 50%; /* Redondear la imagen */
+}
+
+/* Menú desplegable */
+.dropdown-menu {
+    position: absolute;
+    top: 40px; /* Ajusta la distancia desde el botón */
+    right: -10px; /* Alinea al borde derecho del botón */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra del menú */
+    display: none; /* Oculto por defecto */
+    flex-direction: column;
+    padding: 10px;
+    z-index: 100; /* Asegura que esté encima de otros elementos */
+    width: 150px;
+    font-family: Arial, sans-serif;
+}
+
+
 /* Banner principal */
 .banner {
     position: relative;
