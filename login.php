@@ -11,3 +11,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($conexion->connect_error) {
         die("Error de conexión: " . $conexion->connect_error);
     }
+     // Validar credenciales
+    $query = $conexion->prepare("SELECT * FROM usuario WHERE email_usuario = ?");
+    $query->bind_param('s', $email);
+    $query->execute();
+    $resultado = $query->get_result();
+
+    if ($resultado->num_rows > 0) {
+        $user = $resultado->fetch_assoc();
+        // Verificar la contraseña
+        if (password_verify($password, $user['Contraseña_usuario'])) {
+            // Usuario válido
