@@ -1,0 +1,54 @@
+/* Estilo general */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2a0944;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Asegura que el contenido esté completamente centrado verticalmente */
+    height: 100vh;
+  }
+
+/* Contenedor del formulario */
+form {
+    background: linear-gradient(145deg, #5a189a, #9d4edd);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Título del formulario */
+form h2 {
+    margin-bottom: 60px;
+    font-size: 27px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/* Inputs */
+form input {
+    width: 90%;
+    padding: 12px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px
+     }
+
+     .centrado-blanco {
+        color: white;
+        display: block;
+        text-align: center;
+        margin-top: 20px; /* Ajusta el margen según necesites */
+        text-decoration: none; /* Quita el subrayado del enlace */
+    }
+     .centrado-blanco:hover {
+        text-decoration: underline; /* Añade subrayado cuando se pasa el ratón por encima */
+    }
+
+   
