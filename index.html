@@ -26,25 +26,45 @@
             <img src="IMG/Usuario.png" alt="Usuario" class="user-img">
         </button>
         <div class="dropdown-menu" id="userMenu">
-            <a href="login.html">Inicio de Sesión</a>
-            <a href="register.html">Registro</a>
+            <a href="index3.html">Inicio de Sesión</a>
+            <a href="index4.html">Registro</a>
         </div>
     </div>
 </header>
 
-<!-- Banner principal -->
-<section class="banner">
-    <div class="overlay" >
-        <img src="IMG/PASTEL_Principal.png" alt="Pastel principal" class="pastel_principal-image">
-        <img src="IMG/Logo 2.png" alt="Logo 2">
-    </div>
-</section>
-<!-- Filtros y ordenamiento -->
-    <section class="filter-order">
-        <div class="filter">Filtrar: <span>Mas filtros</span> ⬇</div>
-        <div class="sort">Ordenar por: <span>Características</span> ⬇</div>
+    <!-- Banner principal -->
+    <section class="banner">
+        <div class="overlay" >
+            <img src="IMG/PASTEL_Principal.png" alt="Pastel principal" class="pastel_principal-image">
+            <img src="IMG/Logo 2.png" alt="Logo 2">
+        </div>
     </section>
+    <section class="filter-order">
+        <!-- Filtrar -->
+        <div class="dropdown filter">
+          <button class="btn btn-primary dropdown-toggle" type="button" id="filterDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            Filtrar: <span>Sabores</span> ⬇
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="filterDropdown">
+            <li><button class="dropdown-item" onclick="filtrarPor('Chocolate')">Chocolate</button></li>
+            <li><button class="dropdown-item" onclick="filtrarPor('Vainilla')">Vainilla</button></li>
+            <li><button class="dropdown-item" onclick="filtrarPor('Fresa')">Fresa</button></li>
+            <li><button class="dropdown-item" onclick="filtrarPor('Frutos-Rojos')">Frutos Rojos</button></li>
+            <li><button class="dropdown-item" onclick="filtrarPor('Todos')">Todos</button></li>
+          </ul>
+        </div>
 
+        <!-- Ordenar -->
+        <div class="dropdown sort">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="sortDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                Ordenar por: <span>Características</span> ⬇
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="sortDropdown">
+                <li><button class="dropdown-item" onclick="ordenarPor('asc')">A-Z</button></li>
+                <li><button class="dropdown-item" onclick="ordenarPor('desc')">Z-A</button></li>
+            </ul>
+        </div>
+    </section>
     <!-- Galería de pasteles -->
     <section class="gallery">
         <h2>PASTELES</h2>
