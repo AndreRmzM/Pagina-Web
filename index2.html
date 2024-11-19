@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K&A Cake</title>
+  <link rel="stylesheet" href="CSS/Style2.css"> 
+</head>
+<body>
+  <header>
+
+    <!-- Barra de navegación -->
+    <header class="navbar">
+        <a href="index.html">
+            <button class="logo-buttom">
+                <img src="IMG/Logo 1.png" alt="">
+            </button>
+        </a>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+            <button class="search-icon"><img src="IMG/Buscador.png" alt=""></button>
+        </div>
+        <div class="icons">
+            <a href="index2.html" id="icono-carrito">
+                <button class="user-icon" >
+                    <img src="IMG/Carrito.png" alt="Usuario" class="user-img">
+                </button>
+            </a>
+            <button class="user-icon" onclick="toggleMenu()">
+                <img src="IMG/Usuario.png" alt="Usuario" class="user-img">
+            </button>
+            <div class="dropdown-menu" id="userMenu">
+                <a href="login.html">Inicio de Sesión</a>
+                <a href="register.html">Registro</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="carrito">
+      <h2>Carrito</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Tamaño</th>
+            <th>Precio Total</th>
+          </tr>
+        </thead>
+        <tbody id="carritoTabla">
+          <!-- Los productos se añadirán aquí dinámicamente -->
+        </tbody>
+      </table>
+    </section>
+    
+
+
+
+<script src="JS/script2.js" ></script>
+
+</body>
+</html>

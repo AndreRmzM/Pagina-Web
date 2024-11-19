@@ -1,0 +1,224 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    color: #c54bcb;
+    right: 50%;
+    font-size: 1.2em;
+  }
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c54bcb;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo-buttom {
+    font-size: 20%;
+    font-weight: bold;
+    bottom: 30%;
+    background-color: #c54bcb;
+    border-color: #c54bcb;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.search-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    margin-left: 5px;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+/* Botón del usuario como imagen */
+.user-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0; /* Elimina espacios del botón */
+}
+
+.user-img {
+    width: 30px; /* Tamaño de la imagen */
+    height: 30px;
+    border-radius: 50%; /* Redondear la imagen */
+}
+
+/* Menú desplegable */
+.dropdown-menu {
+    position: absolute;
+    top: 40px; /* Ajusta la distancia desde el botón */
+    right: -10px; /* Alinea al borde derecho del botón */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra del menú */
+    display: none; /* Oculto por defecto */
+    flex-direction: column;
+    padding: 10px;
+    z-index: 100; /* Asegura que esté encima de otros elementos */
+    width: 150px;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo de los enlaces dentro del menú */
+.dropdown-menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover en los enlaces */
+.dropdown-menu a:hover {
+    background-color: #f4f4f4;
+}
+
+/* Mostrar el menú cuando esté activo */
+.dropdown-menu.show {
+    display: flex;
+}
+
+/* Contenedor principal */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  /* Producto */
+  .producto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .producto img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .producto p {
+    margin: 0;
+    flex: 1;
+    padding: 0 10px;
+    font-size: 0.9em;
+  }
+  
+  .producto button {
+    background-color: #7b3fa3; /* Botón púrpura */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+  }
+  
+  .producto button:hover {
+    background-color: #5a2c7c;
+  }
+  
+  /* Total */
+  .total {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .total p {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .total button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    background-color: #7b3fa3;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .total button:hover {
+    background-color: #5a2c7c;
+  }
+  
+  /* Botón de recoger en sucursal */
+  button#recoger-sucursal {
+    background-color: #ddd;
+    color: #333;
+  }
+  
+  button#recoger-sucursal:hover {
+    background-color: #bbb;
+  }
+  
+  /* Sucursal y Fecha */
+  .sucursal-fecha {
+    margin-top: 20px;
+  }
+  
+  .sucursal-fecha label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .sucursal-fecha select,
+  .sucursal-fecha input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  /* Botón de pagar */
+  button#pagar-pedido {
+    background-color: #7b3fa3;
+    color: #fff;
+  }
+  
+  button#pagar-pedido:hover {
+    background-color: #5a2c7c;
+  }
