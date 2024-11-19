@@ -22,3 +22,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Verificar la contraseña
         if (password_verify($password, $user['Contraseña_usuario'])) {
             // Usuario válido
+  header("Location: index.html");
+            die();
+        } else {
+            // Contraseña incorrecta
+            echo "Correo o contraseña incorrectos.";
+        }
+    } else {
+        // Usuario no encontrado
+        echo "Correo o contraseña incorrectos.";
+    }
+
+    $query->close();
+    $conexion->close();
+}
+?>
