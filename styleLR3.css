@@ -47,5 +47,8 @@ form input {
         margin-top: 20px; /* Ajusta el margen según necesites */
         text-decoration: none; /* Quita el subrayado del enlace */
     }
-    
+     .centrado-blanco:hover {
+        text-decoration: underline; /* Añade subrayado cuando se pasa el ratón por encima */
+    }
+
    
