@@ -30,3 +30,22 @@ form h2 {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+/* Inputs */
+form input {
+    width: 90%;
+    padding: 12px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px
+     }
+
+     .centrado-blanco {
+        color: white;
+        display: block;
+        text-align: center;
+        margin-top: 20px; /* Ajusta el margen según necesites */
+        text-decoration: none; /* Quita el subrayado del enlace */
+    }
+    
+   
